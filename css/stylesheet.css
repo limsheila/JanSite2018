@@ -1,0 +1,52 @@
+header{
+    padding:20px;
+    text-align:center;
+    background: yellow;
+    margin: 50px;/*it is different from padding*/
+
+
+}
+nav{
+    text-align: center;
+    background: lightblue;
+}
+nav ul{
+    list-style-type: none;
+}
+ul li{
+    display:inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+li a{
+    text-decoration:none;
+}
+article{
+    padding:5px;
+    border:5px dotted green;
+    background-color: greenyellow;
+
+}
+
+aside{
+    background: lightpink;
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    border:5px double palevioletred;
+
+}
+section{
+    margin-top: 10px;
+    padding: 5px;
+    border:5px dotted rgb(0, 153, 255);
+    background: rgb(161, 221, 245);
+    color: rgb(95, 10, 233);
+
+}
+footer{
+    text-align: center;
+
+}

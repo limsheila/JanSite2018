@@ -1,0 +1,201 @@
+#wrapper{ /*id*/
+
+    background-color: rgb(157, 214, 247);
+    float:inherit;
+    width:900px;
+    position: relative;/*absolute need to set the left top*/
+    margin: 0 auto 0 auto;/*top right bottom left*/
+}
+header {
+    float:left;
+    width:880px;
+    height:100px;
+    color:red;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1 h2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 21px;
+}
+nav {
+    float:left;
+    width: 880px;
+    height:30px;
+    background-color:orange;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight:bold;
+    color: black;
+    padding:15px 0px 3px 30px;
+
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+article {
+    float: left;
+    width:650px;
+    background-color: rgb(175, 174, 174);
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 15px;
+    color: aliceblue;
+    padding:20px;
+   /* height: 265px;*/
+}
+section {
+    font-size: 16px;
+}
+aside {
+    float: left;
+    width:200px;
+    background-color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    padding:10px 5px 10px 5px;
+    height: 512px;
+}
+a {
+    color: rgb(22, 240, 131);
+
+}
+a:hover {
+
+}
+footer {
+    background-color:#fff;
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+
+}
+.contact_form h2,.contact_form label{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+.contact_form ul{
+    width:100%;
+    list-style-type:none;
+    list-style-position: outside;
+    margin: 0px;
+    padding:0px;
+}
+.contact_form li{
+    padding: 12px;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+.required_notification,.form_hint{
+    font-size:10px;
+
+}
+*:focus{
+    outline: none;
+}
+.contact_form label{
+    width: 120px;
+    display: inline-block; /*block will flow down, inline-block auto alineblock*/
+}
+.contact_form input{
+    width:220px;
+    height: 20px;
+
+}
+.contact_form textarea{
+    width: 300px;
+
+}
+.contact_form button{
+    margin-left: 230px;
+
+}
+.contact_form input,.contact_form textarea{
+    border:1px dashed red;
+    box-shadow: 0px 0px 3px yellow, 0px 10px 15px orange inset;
+    border-radius: 10px; /*border of the box/image base on % , can create circle effect*/
+    padding-right:30px;
+    -moz-transition: padding .2s;
+    -webkit-transition: padding .2s;
+    -o-transition: padding .2s;
+    transition: padding .2s;
+}
+.contact_form input:focus, .contact_form textarea:focus {/*when the text is clicked on the css changed*/
+    background:green;
+    border:1px solid aqua;
+    box-shadow: 0px 0px 3px white;
+    padding-right:70px;
+}
+.contact_form input:required,.contact_form textarea:required {
+    background: white url('../images/red_asterisk.png') no-repeat 98% center;
+}
+.contact_form input:valid, .contact_form textarea:valid{
+    background: white url('../images/valid.png') no-repeat 98% center;
+    box-shadow: 0 0 5px greenyellow;
+    border-color: green;
+
+}
+.contact_form input:invalid,.contact_form textarea:invalid{
+    background: white url('../images/invalid.png') no-repeat 98% center;
+    box-shadow: 0 0 5px rgb(194, 57, 15);
+    border-color: rgb(201, 13, 169);
+
+}
+button.submit{
+    background-color:rgb(155, 155, 247);
+    border-radius: 3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border:1px solid goldenrod;
+    color: pink;
+    font-weight: bold;
+}
+button.submit:hover {
+    cursor:pointer;
+}
+button.submit:active{
+    background-color:rgb(178, 236, 18);
+    border-radius: 3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border:1px solid rgb(218, 32, 147);
+    color: rgb(71, 59, 236);
+    font-weight: bold;
+}
+.form_hint{
+    background:red;
+    border-radius: 3px 3px 3px 3px;
+    padding:2px;
+    color:yellow;
+    margin-left: 10px;
+    position: absolute;
+    display: none;/*comment this partaway to hide the item before it focus*/
+}
+.form_hint::before{/*create small arrow*/
+    content:"\25c0";
+    position:absolute;
+    color:red;
+    top:1px;
+    left:-6px;
+}
+/*show  the text if focus */
+.contact_form input:focus + .form_hint{
+    display:inline;
+}
+/*change the form hit colour to green if input text is valid, to hide just key in display:none;*/
+.contact_form input:required:valid +.form_hint{
+    background: rgb(29, 231, 107);
+}
+.contact_form input:required:valid+.form_hint::before{
+    color: rgb(29, 231, 107);
+}

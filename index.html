@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My First HTML5 Web Page</title>
+        <link rel="stylesheet" href="./css/style01.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>My COMWORKS Pte Ltd</h1>
+            </header>
+            <nav>
+                <a href="#">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">Experience</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">Beliefs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#">Contacts</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </nav>
+            <article>
+               <!-- <section>
+                    <h2>Brief Intro</h2>
+                    <p>
+                        Sheila is keen to take on the task of being a full software developement.
+                        She graduated from NUS in 2015.
+                        She has been in the financial field for 2 years and is looking into the PCP program for the fullstack developer.
+                    </p>
+                </section>-->
+                <section>
+                    <form class="contact_form" action="#" method="post" name="contact_form">
+                        <ul>
+                            <li>
+                                <h2>Contact Us</h2>
+                                <span class="required_notification">*Denote required field</span><!-- use for some sort for alert or display text area-->
+                            </li>
+                            <li>
+                                <label for="name">Name</label>
+                                <input type="text" placeholder="Sheila" required/><!--placeholer-hint for input reuired html element check out the w3 input tag -->
+                                <span class="form_hint">Name is Required</span>
+                            </li>
+                            <li>
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="someone@example.com" required/>
+                                <span class="form_hint">Enter Proper email format, i.e. someone@example.com</span>
+                            </li>
+                            <li>
+                                <label for='url'>website</label>
+                                <input type='url' placeholder="https://woshilaoban.com" required pattern="(http|https)://.+"/>
+                                <span class="form_hint">input valid url</span>
+                            </li>
+                            <li>
+                                <label for="comments">Comments</label>
+                                <textarea name="message" cols="50" rows="10"></textarea>
+                            </li>
+                            <li>
+                                <button class="submit" type="submit">Submit Form</button>
+                            </li>
+                        </ul>
+                    </form>
+                </section>
+            </article>
+            <aside>
+                <h3>Testing Pte Ltd</h3>
+                <ol type="A">
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">Rates</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ol>
+                <br>
+                <p>Testing to input some coontext for the aside.</p>
+                <p>2nd paragraph to test input some content in the the aside tag.</p>
+                <p>Simulation for 3rd Paragraph.I need to type more stuff in this 3rd paragraph.
+                    So...... hello, this is the testing for coder in you
+                    <a href="#">Contact Us</a> find us.
+                </p>
+            </aside>
+            <footer>
+                Copyright&copy; Testing Pte Ltd&reg; Trademark&trade;
+            </footer>
+
+        </div>
+    </body>
+</html>
